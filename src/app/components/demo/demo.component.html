@@ -1,0 +1,14 @@
+<div>
+  <h4>This is the Demo Component</h4>
+  <br />
+  First Name is {{ firstName }}
+  <br />
+  Last Name is {{ lastName }}
+  <br />
+  <h5>List of Actors</h5>
+  <ul>
+    <li *ngFor="let actor of actors; index as n">
+      Sr.No. {{ n + 1 }} Name: {{ actor.name }} City: {{ actor.city }}
+    </li>
+  </ul>
+</div>
